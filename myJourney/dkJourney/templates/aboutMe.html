@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="{% url 'dkJourney:index' %}">Home</a>
+            <a href="{% url 'dkJourney:about' %}">About Me</a>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h2>Dorji Khandu</h2>
+        <p>
+            Hello! I’m a passionate learner exploring web technologies.  
+            I enjoy building websites and learning how web applications work behind the scenes.  
+            My goal is to become a skilled full-stack developer and use technology to solve real-world problems.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Dorji Khandu | All rights reserved</p>
+    </footer>
+</body>
+</html>
